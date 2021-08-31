@@ -21,6 +21,8 @@ intents:
     use_entities: true
 - sobrenombre:
     use_entities: true
+- inf-email:
+    use_entities: true
 entities:
 - Nombre
 slots: {}

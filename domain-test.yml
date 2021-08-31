@@ -21,9 +21,8 @@ intents:
     use_entities: true
 - sobrenombre:
     use_entities: true
--
 entities:
-- nombre
+- Nombre
 slots: {}
 responses:
   utter_inicio:

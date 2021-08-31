@@ -42,3 +42,8 @@ nlu:
   examples: |
     - Harold
     - Mi nombre es [Harold](Nombre)
+- intent: inf-email
+  examples: |
+    - Mi email es harolrop@gmail.com
+    - Mi correo es random@example.com
+    - Enviame informacion a random@example.com

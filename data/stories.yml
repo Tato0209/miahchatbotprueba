@@ -65,3 +65,14 @@ stories:
   - action: utter_sobrenombre
   - intent: sobrenombre
   - action: utter_gustoconocerte
+- story: Untitled Story
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: adios

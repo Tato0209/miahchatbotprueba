@@ -45,10 +45,9 @@ nlu:
     - Me llamo [Jorge](Nombre)
     - Me llamo [Maria](Nombre)
     - Me llamo [Harold](Nombre)
-
+    - Me llamo [Rosa](Nombre)
 - intent: inf-email
   examples: |
     - Mi email es harolrop@gmail.com
     - Mi correo es random@example.com
     - Enviame informacion a random@example.com
-    

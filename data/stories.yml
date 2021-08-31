@@ -63,5 +63,7 @@ stories:
   - action: utter_orgasmo_3
   - intent: afirmacion
   - action: utter_sobrenombre
-  - intent: rsp_nombre
+  - intent: sobrenombre
+    entities: 
+      -nombre: "Harold"
   - action: utter_gustoconocerte

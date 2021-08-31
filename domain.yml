@@ -19,7 +19,11 @@ intents:
     use_entities: true
 - rsp_tema:
     use_entities: true
-entities: []
+- sobrenombre:
+    use_entities: true
+-
+entities:
+- nombre
 slots: {}
 responses:
   utter_inicio:

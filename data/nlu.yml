@@ -40,4 +40,14 @@ nlu:
     - Mejorar mis orgasmos
 - intent: sobrenombre
   examples: |
-    - Harold
+    - Mi nombre es [Harold]{"entity": "nombre"}
+    - [Harold]{"entity": "nombre"} es mi nombre
+    - [Harold]{"entity": "nombre"}
+
+- lookup: nombre
+  examples: |
+    - Marco
+    - Maria
+    - Jose
+    - Ivan
+    - Marcelo

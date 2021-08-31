@@ -1,6 +1,6 @@
 version: "2.0"
 stories:
-- story: Inicio cortante
+- story: Inicio corto
   steps:
   - intent: saludo
   - action: utter_inicio
@@ -9,6 +9,7 @@ stories:
   - action: utter_post_saludo_1.1
   - action: utter_post_saludo_1.2
   - action: utter_post_saludo_1.3
+  - action: utter_listo
   - intent: adios
 - story: Inicio Acerca del Bot
   steps:
@@ -17,3 +18,50 @@ stories:
   - action: utter_saludo
   - intent: resp_saludo_2
   - action: utter_acerca_bot
+- story: Inicio Afirmacion
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+- story: Story no listo
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: negacion
+  - action: utter_no_lista_1
+  - action: utter_no_lista_2
+  - intent: rsp_tema
+  - action: utter_empecemos
+- story: Story listo
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: rsp_nombre
+  - action: utter_gustoconocerte

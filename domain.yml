@@ -13,6 +13,12 @@ intents:
     use_entities: true
 - adios:
     use_entities: true
+- afirmacion:
+    use_entities: true
+- negacion:
+    use_entities: true
+- rsp_tema:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -32,13 +38,21 @@ responses:
   utter_post_saludo_1.3:
   - text: Cuando desees que nuestra conversación termine solo debes escribir MIAH DEBO IRME.
   utter_listo:
-  - text: ¿Estás lista para comenzar?
+  - buttons:
+    - payload: Sí! Vamos con todo
+      title: Sí! Vamos con todo
+    - payload: Creo que aún no, cambiaré de tema.
+      title: Creo que aún no, cambiaré de tema.
+    text: ¿Estás lista para comenzar?
   utter_orgasmo_1:
   - text: El orgasmo femenino es una sensación difícil de describir y cada una lo experimenta de manera distinta.  Pero según Emily Nagoski PhD  «Un orgasmo es la liberación repentina de tensión sexual».
   utter_orgasmo_2:
   - text: Debes saber que cada mujer es un mundo distinto y tu placer también lo es. Lo que funciona para algunas no necesariamente te va funciona a ti.
   utter_orgasmo_3:
-  - text: Por eso, quiero conocerte un poco para luego preparar un programa personalizado para ti y tus necesidades.
+  - buttons:
+    - payload: Perfecto Miah! Puedes conocerme.
+      title: Perfecto Miah! Puedes conocerme.
+    text: Por eso, quiero conocerte un poco para luego preparar un programa personalizado para ti y tus necesidades.
   utter_sobrenombre:
   - text: ¿Cómo te gustaría que te llame?
   utter_gustoconocerte:
@@ -64,7 +78,24 @@ responses:
   utter_post_mejorar_1:
   - text: '[nombre] eres muy valiente por empezar a abrirte conmigo.'
   utter_acerca_bot:
-  - text: Soy un robot creado con Inteligencia Artificial, capaz de detectar emociones y resolver tus dudas.
+  - text: Te mando un audio contándote todo sobre mí.                    AUDIO…
+  utter_no_lista_1:
+  - text: Entiendo, si no te sientes lista para este tema en otro momento podemos volver a ello.
+  utter_no_lista_2:
+  - buttons:
+    - payload: Romper creencias
+      title: 1. Romper creencias
+    - payload: Dejar de juzgar mi cuerpo
+      title: 2. Dejar de juzgar mi cuerpo
+    - payload: Mejorar mi confianza
+      title: 3. Mejorar mi confianza
+    - payload: Mejorar la Comunicación con mi pareja
+      title: 4. Mejorar la Comunicación con mi pareja
+    - payload: 'Mejorar mis orgasmos  '
+      title: '5. Mejorar mis orgasmos  '
+    text: Entonces ¿Con qué tema te gustaría empezar?
+  utter_empecemos:
+  - text: Perfecto! Empecemos entonces.
 actions:
 - utter_inicio
 forms: {}

@@ -6,14 +6,38 @@ nlu:
     - Buenas tardes
     - Buenas noches
     - Buenos días
+    - Hols
+    - Holas
+    - Buenas
 - intent: resp_saludo_1
   examples: |
     - Un gusto conocerte Miah
 - intent: resp_saludo_2
   examples: |
     - ¿Miah eres un humano? Quiero saber más de ti
+    - ¿Miah eres un humano?
 - intent: adios
   examples: |
     - Adios
     - Hasta luego
     - Me tengo que ir
+    - Miah debo irme
+- intent: afirmacion
+  examples: |
+    - Ok
+    - Si
+    - Sí! Vamos con todo
+    - Perfecto Miah! Puedes conocerme.
+- intent: negacion
+  examples: |
+    - Creo que aún no, cambiaré de tema.
+- intent: rsp_tema
+  examples: |
+    - Romper creencias
+    - Dejar de juzgar mi cuerpo
+    - Mejorar mi confianza
+    - Mejorar la comunicación con mi pareja
+    - Mejorar mis orgasmos
+- intent: sobrenombre
+  examples: |
+    - Harold

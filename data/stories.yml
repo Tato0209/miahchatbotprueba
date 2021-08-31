@@ -64,6 +64,4 @@ stories:
   - intent: afirmacion
   - action: utter_sobrenombre
   - intent: sobrenombre
-    entities: 
-      -nombre: "Harold"
   - action: utter_gustoconocerte

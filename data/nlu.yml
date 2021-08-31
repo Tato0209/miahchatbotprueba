@@ -40,5 +40,8 @@ nlu:
     - Mejorar mis orgasmos
 - intent: sobrenombre
   examples: |
-    - Harold
+    - [Harold](Nombre)
     - Mi nombre es [Harold](Nombre)
+    - Me llamo [Jorge](Nombre)
+    - Me llamo [Maria](Nombre)
+    - Me llamo [Harold](Nombre)

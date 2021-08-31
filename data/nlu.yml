@@ -42,14 +42,13 @@ nlu:
   examples: |
     - [Harold](Nombre)
     - Mi nombre es [Harold](Nombre)
-<<<<<<< HEAD
+    - Me llamo [Jorge](Nombre)
+    - Me llamo [Maria](Nombre)
+    - Me llamo [Harold](Nombre)
+
 - intent: inf-email
   examples: |
     - Mi email es harolrop@gmail.com
     - Mi correo es random@example.com
     - Enviame informacion a random@example.com
-=======
-    - Me llamo [Jorge](Nombre)
-    - Me llamo [Maria](Nombre)
-    - Me llamo [Harold](Nombre)
->>>>>>> 3fc5624981fdece91cfc1c4e73e4ef19cb50811c
+    

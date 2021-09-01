@@ -27,7 +27,12 @@ intents:
     use_entities: true
 entities:
 - Nombre
-slots: {}
+slots:
+  Nombre:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_inicio:
   - text: Has elegido uno de mis temas favoritos 🔥 Aprenderás en este proceso a conocerte a ti misma, desde la mente, el cuerpo e incluso el espíritu. Esos tres factores son cruciales para el disfrute de nuestro placer y con ello poder tener los orgasmos más increíbles que puedas imaginar.

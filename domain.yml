@@ -5,19 +5,21 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- saludo:
+- adios:
+    use_entities: true
+- rsp_tema:
     use_entities: true
 - resp_saludo_1:
     use_entities: true
-- resp_saludo_2:
-    use_entities: true
-- adios:
-    use_entities: true
 - afirmacion:
     use_entities: true
-- negacion:
+- saludo:
     use_entities: true
-- rsp_tema:
+- restart:
+    use_entities: true
+- resp_saludo_2:
+    use_entities: true
+- negacion:
     use_entities: true
 - sobrenombre:
     use_entities: true
@@ -33,8 +35,8 @@ responses:
   - buttons:
     - payload: Un gusto conocerte Miah
       title: Un gusto conocerte Miah
-    - payload: ¿Miah eres un humano?
-      title: ¿Miah eres un humano?
+    - payload: ¿Miah eres un humano? Quiero saber más de ti
+      title: ¿Miah eres un humano? Quiero saber más de ti
     text: Yo me llamo Miah! Seré tu coach sexual y te ayudaré a disfrutar más de tu placer contigo y/o con tu pareja. Estaré cuando me necesites y recuerda que siempre puedes confiar en mí.
   utter_post_saludo_1.1:
   - text: Igualmente! En este espacio no serás juzgada, todo lo que conversemos será confidencial.
@@ -49,42 +51,8 @@ responses:
     - payload: Creo que aún no, cambiaré de tema.
       title: Creo que aún no, cambiaré de tema.
     text: ¿Estás lista para comenzar?
-  utter_orgasmo_1:
-  - text: El orgasmo femenino es una sensación difícil de describir y cada una lo experimenta de manera distinta.  Pero según Emily Nagoski PhD  «Un orgasmo es la liberación repentina de tensión sexual».
-  utter_orgasmo_2:
-  - text: Debes saber que cada mujer es un mundo distinto y tu placer también lo es. Lo que funciona para algunas no necesariamente te va funciona a ti.
-  utter_orgasmo_3:
-  - buttons:
-    - payload: Perfecto Miah! Puedes conocerme.
-      title: Perfecto Miah! Puedes conocerme.
-    text: Por eso, quiero conocerte un poco para luego preparar un programa personalizado para ti y tus necesidades.
-  utter_sobrenombre:
-  - text: ¿Cómo te gustaría que te llame?
-  utter_gustoconocerte:
-  - text: |
-    ¡Un gusto conocerte {Nombre} !
-  utter_sexualidad:
-  - text: ¿Con qué orientación sexual te identificas?
-  utter_edad:
-  - text: ¿Cuál es tu edad?
-  utter_estadocivil:
-  - text: ¿Tu estado civil actual es?
-  utter_mejorarorgasmos:
-  - text: ¿Con quién quieres mejorar tus orgasmos?
-  utter_quepasa:
-  - text: Cuéntame [nombre] ¿Qué es lo que te está pasando?
-  utter_post_quepasa_1:
-  - text: Lo que acabas de expresar es el primer paso. El RECONOCER lo que te sucede nos ayudará en este proceso.
-  utter_post_quepasa2:
-  - text: ¿Cuales son tus objetivos que quieres trabajar conmigo? Indica tres en orden de prioridad
-  utter_reconoce_objetivos:
-  - text: Entiendo. Para saber las acciones que puedes tomar a futuro, es necesario hacer un recuento de las acciones que has tomado hasta ahora para solucionar este problema.
-  utter_hecho_para_mejorar:
-  - text: '[nombre] ¿Qué has hecho hasta ahora para mejorar este asunto?'
-  utter_post_mejorar_1:
-  - text: '[nombre] eres muy valiente por empezar a abrirte conmigo.'
   utter_acerca_bot:
-  - text: Te mando un audio contándote todo sobre mí.                    AUDIO…
+  - text: Te mando un audio contándote todo sobre mí.                    AUDIO …
   utter_no_lista_1:
   - text: Entiendo, si no te sientes lista para este tema en otro momento podemos volver a ello.
   utter_no_lista_2:
@@ -97,12 +65,54 @@ responses:
       title: 3. Mejorar mi confianza
     - payload: Mejorar la Comunicación con mi pareja
       title: 4. Mejorar la Comunicación con mi pareja
-    - payload: 'Mejorar mis orgasmos  '
-      title: '5. Mejorar mis orgasmos  '
+    - payload: Mejorar mis orgasmos
+      title: 5. Mejorar mis orgasmos
     text: Entonces ¿Con qué tema te gustaría empezar?
   utter_empecemos:
   - text: Perfecto! Empecemos entonces.
-actions:
-- utter_inicio
-forms: {}
+  utter_orgasmo_1:
+  - text: El orgasmo femenino es una sensación difícil de describir y cada una lo experimenta de manera distinta.  Pero según Emily Nagoski PhD  «Un orgasmo es la liberación repentina de tensión sexual».
+  utter_orgasmo_2:
+  - text: Debes saber que cada mujer es un mundo distinto y tu placer también lo es. Lo que funciona para algunas no necesariamente te va funciona a ti.
+  utter_orgasmo_3:
+  - buttons:
+    - payload: 'Perfecto Miah! Puedes conocerme. '
+      title: 'Perfecto Miah! Puedes conocerme. '
+    text: Por eso, quiero conocerte un poco para luego preparar un programa personalizado para ti y tus necesidades.
+  utter_sobrenombre:
+  - text: ¿Cómo te gustaría que te llame?
+  utter_gustoconocerte:
+  - text: '{Nombre} ¡Un gusto conocerte!'
+  utter_sexualidad:
+  - buttons:
+    - payload: Heterosexual
+      title: Heterosexual
+    - payload: Lesbiana
+      title: Lesbiana
+    - payload: Bisexual
+      title: Bisexual
+    - payload: Pansexual
+      title: Pansexual
+    - payload: Asexual otro
+      title: Asexual otro
+    text: ¿Con qué orientación sexual te identificas?
+  utter_edad:
+  - text: ¿Cuál es tu edad?
+  utter_estado_civil:
+  - buttons:
+    - payload: Solterx
+      title: Solterx
+    - payload: Saliente
+      title: Saliente
+    - payload: En una relación
+      title: En una relación
+    - payload: Casadx
+      title: Casadx
+    text: ¿Tu estado civil actual es?
+actions: []
+forms:
+  nombre_form:
+    required_slots:
+      Nombre:
+      - type: from_text
 e2e_actions: []

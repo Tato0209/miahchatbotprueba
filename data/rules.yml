@@ -1,0 +1,15 @@
+version: "2.0"
+rules:
+- rule: Activa Nombre Form
+  steps:
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+  - action: nombre_form
+  - active_loop: nombre_form
+- rule: Nombre Respuesta
+  condition:
+  - active_loop: nombre_form
+  steps:
+  - action: nombre_form
+  - active_loop: null
+  - action: utter_gustoconocerte

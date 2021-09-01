@@ -9,6 +9,7 @@ nlu:
     - Hols
     - Holas
     - Buenas
+    - Buenos dias
 - intent: resp_saludo_1
   examples: |
     - Un gusto conocerte Miah
@@ -46,6 +47,7 @@ nlu:
     - Me llamo [Maria](Nombre)
     - Me llamo [Harold](Nombre)
     - Me llamo [Rosa](Nombre)
+    - Me llamo [Juan](Nombre)
 - intent: inf-email
   examples: |
     - Mi email es harolrop@gmail.com

@@ -164,3 +164,18 @@ stories:
     - requested_slot: null
   - active_loop: null
   - action: utter_gustoconocerte
+- story: Continuacion Edad
+  steps:
+  - slot_was_set:
+    - Nombre: Jorge
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+- story: Edad Continuacion
+  steps:
+  - slot_was_set:
+    - Nombre: Maria
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+  - intent: edad

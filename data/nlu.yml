@@ -53,3 +53,9 @@ nlu:
     - Mi email es harolrop@gmail.com
     - Mi correo es random@example.com
     - Enviame informacion a random@example.com
+- intent: sexualidad
+  examples: |
+    - Heterosexual
+- intent: edad
+  examples: |
+    - 20

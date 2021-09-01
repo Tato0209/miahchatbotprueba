@@ -76,3 +76,39 @@ stories:
   - action: utter_post_saludo_1.3
   - action: utter_listo
   - intent: adios
+- story: Prueba 1
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+  - action: utter_gustoconocerte
+  - intent: restart
+  - action: action_restart
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+  - action: utter_gustoconocerte

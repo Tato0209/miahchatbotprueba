@@ -25,10 +25,25 @@ intents:
     use_entities: true
 - inf-email:
     use_entities: true
+- sexualidad:
+    use_entities: true
+- edad:
+    use_entities: true
+- estado_civil:
+    use_entities: true
+- quien_mejora_orgasm:
+    use_entities: true
+- que_me_pasa:
+    use_entities: true
 entities:
 - Nombre
 slots:
   Nombre:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
     type: rasa.shared.core.slots.UnfeaturizedSlot
     initial_value: null
     auto_fill: true
@@ -114,7 +129,21 @@ responses:
     - payload: Casadx
       title: Casadx
     text: ¿Tu estado civil actual es?
-actions: []
+  utter_mejorarorgasmos:
+  - buttons:
+    - payload: Conmigo misma
+      title: Conmigo misma
+    - payload: Con mi pareja
+      title: Con mi pareja
+    text: ¿Con quién quieres mejorar tus orgasmos?
+  utter_quepasa:
+  - text: Cuéntame {Nombre} ¿Qué es lo que te está pasando?
+  utter_post_que_pasa_1:
+  - text: Lo que acabas de expresar es el primer paso. El RECONOCER lo que te sucede nos ayudará en este proceso.
+  utter_post_que_pasa_2:
+  - text: ¿Cuales son tus objetivos que quieres trabajar conmigo? Indica tres en orden de prioridad
+actions:
+- utter_quepasa
 forms:
   nombre_form:
     required_slots:

@@ -56,6 +56,17 @@ nlu:
 - intent: sexualidad
   examples: |
     - Heterosexual
+    - Bisexual
 - intent: edad
   examples: |
     - 20
+- intent: quien_mejora_orgasm
+  examples: |
+    - Conmigo misma
+    - Con mi pareja
+- intent: estado_civil
+  examples: |
+    - Saliente
+- intent: que_me_pasa
+  examples: |
+    - Estoy ...

@@ -106,64 +106,6 @@ stories:
   - action: utter_orgasmo_3
   - intent: afirmacion
   - action: utter_sobrenombre
-- story: Nombre Ident
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: afirmacion
-  - action: utter_orgasmo_1
-  - action: utter_orgasmo_2
-  - action: utter_orgasmo_3
-  - intent: afirmacion
-  - action: utter_sobrenombre
-  - intent: sobrenombre
-    entities:
-    - Nombre: Harold
-  - slot_was_set:
-    - Nombre: Harold
-  - action: nombre_form
-  - active_loop: nombre_form
-  - slot_was_set:
-    - Nombre: Harold
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_gustoconocerte
-- story: Nombre Ident 2
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: afirmacion
-  - action: utter_orgasmo_1
-  - action: utter_orgasmo_2
-  - action: utter_orgasmo_3
-  - intent: afirmacion
-  - action: utter_sobrenombre
-  - intent: sobrenombre
-    entities:
-    - Nombre: Maria
-  - slot_was_set:
-    - Nombre: Maria
-  - action: nombre_form
-  - active_loop: nombre_form
-  - slot_was_set:
-    - Nombre: Maria
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_gustoconocerte
 - story: Continuacion Edad
   steps:
   - slot_was_set:
@@ -179,3 +121,152 @@ stories:
   - intent: sexualidad
   - action: utter_edad
   - intent: edad
+- story: Story from Conversation ID 5d414b3fd2c44d2da150ce3b4e83b28b
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    entities:
+    - Nombre: Harold
+  - slot_was_set:
+    - Nombre: Harold
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Harold
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - slot_was_set:
+    - Nombre: Harold
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+- story: Hasta estadocivil
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    entities:
+    - Nombre: Harold
+  - slot_was_set:
+    - Nombre: Harold
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Harold
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+  - intent: edad
+  - action: utter_estado_civil
+  - intent: estado_civil
+  - action: utter_mejorarorgasmos
+- story: Story from Conversation ID 0bcd2c9d98ff4f379f0e0751bb7c0076
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    entities:
+    - Nombre: Harold
+  - slot_was_set:
+    - Nombre: Harold
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Harold
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+  - intent: edad
+  - action: utter_estado_civil
+  - intent: estado_civil
+  - action: utter_mejorarorgasmos
+  - intent: quien_mejora_orgasm
+  - action: utter_quepasa
+- story: Hasta Post Que pasa
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    entities:
+    - Nombre: Maria
+  - slot_was_set:
+    - Nombre: Maria
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Maria
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+  - intent: edad
+  - action: utter_estado_civil
+  - intent: estado_civil
+  - action: utter_mejorarorgasmos
+  - intent: quien_mejora_orgasm
+  - action: utter_quepasa
+  - intent: que_me_pasa
+  - action: post_que_pasa_1
+  - action: post_que_pasa_2

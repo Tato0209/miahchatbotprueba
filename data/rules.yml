@@ -13,3 +13,4 @@ rules:
   - action: nombre_form
   - active_loop: null
   - action: utter_gustoconocerte
+  - action: utter_sexualidad

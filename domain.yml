@@ -5,6 +5,18 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- objetivos:
+    use_entities: true
+- hecho_mejorar:
+    use_entities: true
+- escuchar:
+    use_entities: true
+- no_escuchar:
+    use_entities: true
+- si_ayuda:
+    use_entities: true
+- no_ayuda:
+    use_entities: true
 - adios:
     use_entities: true
 - rsp_tema:
@@ -34,6 +46,12 @@ intents:
 - quien_mejora_orgasm:
     use_entities: true
 - que_me_pasa:
+    use_entities: true
+- emocion:
+    use_entities: true
+- parte_del_cuerpo:
+    use_entities: true
+- gracias:
     use_entities: true
 entities:
 - Nombre
@@ -142,6 +160,75 @@ responses:
   - text: Lo que acabas de expresar es el primer paso. El RECONOCER lo que te sucede nos ayudará en este proceso.
   utter_post_que_pasa_2:
   - text: ¿Cuales son tus objetivos que quieres trabajar conmigo? Indica tres en orden de prioridad
+  utter_reconoce_objetivos:
+  - text: Entiendo. Para saber las acciones que puedes tomar a futuro, es necesario hacer un recuento de las acciones que has tomado hasta ahora para solucionar este problema.
+  utter_hecho_mejorar:
+  - text: '{Nombre} ¿Qué has hecho hasta ahora para mejorar este asunto?'
+  utter_2do_audio_1:
+  - text: '{Nombre} eres muy valiente por empezar a abrirte conmigo.'
+  utter_2do_audio_2:
+  - text: Ahora respira profundamente, inhala por la nariz y bota todo el aire que puedas por la boca. Como si fueras un globo… ¡desínflate!
+  utter_2do_audio_3:
+  - buttons:
+    - payload: Gracias Miah por escucharme, envíamela!
+      title: Gracias Miah por escucharme, envíamela!
+    - payload: Uy en este momento no podré escucharla, retomamos luego.
+      title: Uy en este momento no podré escucharla
+    text: Te estoy mandando un audio con un ejercicio que quiero que empieces desde hoy.
+  utter_audio_n2:
+  - text: /audio/
+  utter_audio_n2r:
+  - buttons:
+    - payload: Increíble! He conectado conmigo.
+      title: Increíble! He conectado conmigo.
+    - payload: No me ha servido mucho
+      title: No me ha servido mucho
+    text: ¿Qué te pareció la experiencia?
+  utter_ntp_audio2:
+  - text: No te preocupes, igual te lo mando para que lo escuches cuando puedas.
+  utter_ntp_audio2_2:
+  - buttons:
+    - payload: Así lo haré cuando lo escuche
+      title: Así lo haré cuando lo escuche
+    - payload: Mejor lo escucho ahora
+      title: Mejor lo escucho ahora
+    text: '{Nombre} recuerda hacerlo cada vez que lo necesites, si puedes diariamente mejor.'
+  utter_me_alegra:
+  - text: Me alegra mucho, te iré compartiendo algunas herramientas mientras sigamos hablando.
+  utter_post_no_ayuda_1:
+  - text: No te preocupes, todo llegará en su momento.
+  utter_post_no_ayuda_2:
+  - text: Solo te pido que te des permiso de abrirte, no para mi, sino para ti.
+  utter_post_no_ayuda_3:
+  - text: Mientras más te cierres, menos podré ayudarte.
+  utter_exp_emociones:
+  - buttons:
+    - payload: Ira
+      title: Ira
+    - payload: Amor
+      title: Amor
+    - payload: Miedo
+      title: Miedo
+    - payload: Sorpresa
+      title: Sorpresa
+    - payload: Tristeza
+      title: Tristeza
+    - payload: Placer
+      title: Placer
+    text: ¿Qué emociones experimentaste?
+  utter_cuerpo_emocion:
+  - text: ¿En qué parte de tu cuerpo sientes esa(s) emoción(es)?
+  utter_no_juzgar_partes_1:
+  - text: Tranquila, ahora piensa en esas partes y no las juzgues.
+  utter_no_juzgar_partes_2:
+  - buttons:
+    - payload: 'Gracias por el dato, no lo sabía. '
+      title: 'Gracias por el dato, no lo sabía. '
+    - payload: Gracias por recordármelo.
+      title: Gracias por recordármelo.
+    text: Cuando una persona tiene emociones reprimidas, nuestro cuerpo las externaliza, e incluso hasta puede enfermarse, ese proceso se llama SOMATIZACIÓN
+  utter_post_gracias_preg:
+  - text: ¿Te ha pasado que alguna vez has tenido opresión en el pecho, falta de respiración, dolor en los brazos o piernas o incluso dolor de cabeza pero vas al doctor y no tienes nada?
 actions:
 - utter_quepasa
 forms:

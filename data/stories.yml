@@ -18,20 +18,6 @@ stories:
   - action: utter_saludo
   - intent: resp_saludo_2
   - action: utter_acerca_bot
-- story: Inicio Afirmacion
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: afirmacion
-  - action: utter_orgasmo_1
-  - action: utter_orgasmo_2
-  - action: utter_orgasmo_3
 - story: Story no listo
   steps:
   - intent: saludo
@@ -48,49 +34,6 @@ stories:
   - intent: rsp_tema
   - action: utter_empecemos
 - story: Story listo
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: afirmacion
-  - action: utter_orgasmo_1
-  - action: utter_orgasmo_2
-  - action: utter_orgasmo_3
-  - intent: afirmacion
-  - action: utter_sobrenombre
-- story: Untitled Story
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: adios
-- story: Prueba 1
-  steps:
-  - intent: saludo
-  - action: utter_inicio
-  - action: utter_saludo
-  - intent: resp_saludo_1
-  - action: utter_post_saludo_1.1
-  - action: utter_post_saludo_1.2
-  - action: utter_post_saludo_1.3
-  - action: utter_listo
-  - intent: afirmacion
-  - action: utter_orgasmo_1
-  - action: utter_orgasmo_2
-  - action: utter_orgasmo_3
-  - intent: afirmacion
-  - action: utter_sobrenombre
-- story: Prueba 2
   steps:
   - intent: saludo
   - action: utter_inicio
@@ -229,6 +172,7 @@ stories:
   - action: utter_mejorarorgasmos
   - intent: quien_mejora_orgasm
   - action: utter_quepasa
+  - intent: que_me_pasa
 - story: Hasta Post Que pasa
   steps:
   - intent: saludo
@@ -268,5 +212,75 @@ stories:
   - intent: quien_mejora_orgasm
   - action: utter_quepasa
   - intent: que_me_pasa
-  - action: post_que_pasa_1
-  - action: post_que_pasa_2
+  - action: utter_post_que_pasa_1
+  - action: utter_post_que_pasa_2
+- story: continuacion post que pasa
+  steps:
+  - intent: que_me_pasa
+  - action: utter_post_que_pasa_1
+  - action: utter_post_que_pasa_2
+  - intent: objetivos
+  - action: utter_reconoce_objetivos
+  - action: utter_hecho_mejorar
+  - intent: hecho_mejorar
+  - action: utter_2do_audio_1
+  - action: utter_2do_audio_2
+  - action: utter_2do_audio_3
+  - intent: negacion
+  - action: utter_ntp_audio2
+  - action: utter_audio_n2
+  - action: utter_ntp_audio2_2
+- story: 2do audio si ayuda
+  steps:
+  - action: utter_audio_n2
+  - action: utter_ntp_audio2_2
+  - intent: escuchar
+  - action: utter_audio_n2r
+  - intent: si_ayuda
+  - action: utter_me_alegra
+  - intent: afirmacion
+  - action: utter_exp_emociones
+  - intent: emocion
+  - action: utter_cuerpo_emocion
+  - intent: parte_del_cuerpo
+  - action: utter_no_juzgar_partes_1
+  - action: utter_no_juzgar_partes_2
+  - intent: gracias
+  - action: utter_post_gracias_preg
+- story: continuacion post que pasa positi
+  steps:
+  - intent: que_me_pasa
+  - action: utter_post_que_pasa_1
+  - action: utter_post_que_pasa_2
+  - intent: objetivos
+  - action: utter_reconoce_objetivos
+  - action: utter_hecho_mejorar
+  - intent: hecho_mejorar
+  - action: utter_2do_audio_1
+  - action: utter_2do_audio_2
+  - action: utter_2do_audio_3
+  - intent: afirmacion
+  - action: utter_audio_n2
+  - action: utter_audio_n2r
+- story: 2do audio no ayuda
+  steps:
+  - action: utter_audio_n2
+  - action: utter_ntp_audio2_2
+  - intent: escuchar
+  - action: utter_audio_n2r
+  - intent: no_ayuda
+  - action: utter_post_no_ayuda_1
+  - action: utter_post_no_ayuda_2
+  - action: utter_post_no_ayuda_3
+- story: continuacion emocion
+  steps:
+  - action: utter_me_alegra
+  - intent: afirmacion
+  - action: utter_exp_emociones
+  - intent: emocion
+  - action: utter_cuerpo_emocion
+  - intent: parte_del_cuerpo
+  - action: utter_no_juzgar_partes_1
+  - action: utter_no_juzgar_partes_2
+  - intent: gracias
+  - action: utter_post_gracias_preg

@@ -1,6 +1,6 @@
 version: "2.0"
 stories:
-- story: Story from Conversation ID e3b76330ce364070bb02899fd129010f
+- story: Story from Conversation ID 1fabfd7db0c4422f8d8135eda02ca650
   steps:
   - intent: saludo
     user: |-
@@ -13,6 +13,69 @@ stories:
   - action: utter_post_saludo_1.1
   - action: utter_post_saludo_1.2
   - action: utter_post_saludo_1.3
-  - intent: adios
+  - action: utter_listo
+  - intent: afirmacion
     user: |-
-      Adios
+      Sí! Vamos con todo
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+    user: |-
+      Perfecto Miah! Puedes conocerme.
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    user: |-
+      Me llamo [Maria](Nombre)
+  - slot_was_set:
+    - Nombre: Maria
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Maria
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - action: utter_sexualidad
+  - intent: sexualidad
+    user: |-
+      Bisexual
+  - action: utter_edad
+  - intent: edad
+    user: |-
+      20
+  - action: utter_estado_civil
+  - intent: estado_civil
+    user: |-
+      Saliente
+  - action: utter_mejorarorgasmos
+  - intent: quien_mejora_orgasm
+    user: |-
+      Con mi pareja
+  - action: utter_quepasa
+  - intent: que_me_pasa
+    user: |-
+      Estoy ...
+  - action: utter_post_que_pasa_1
+  - action: utter_post_que_pasa_2
+  - intent: objetivos
+    user: |-
+      Primero
+  - action: utter_reconoce_objetivos
+  - action: utter_hecho_mejorar
+  - intent: hecho_mejorar
+    user: |-
+      Hasta ahora
+  - action: utter_2do_audio_1
+  - action: utter_2do_audio_2
+  - action: utter_2do_audio_3
+  - intent: afirmacion
+    user: |-
+      Gracias Miah por escucharme, envíamela!
+  - action: utter_audio_n2
+  - action: utter_audio_n2r
+  - intent: si_ayuda
+    user: |-
+      Increíble! He conectado conmigo.
+  - action: utter_me_alegra

@@ -29,9 +29,12 @@ nlu:
     - Si
     - Sí! Vamos con todo
     - Perfecto Miah! Puedes conocerme.
+    - Gracias Miah por escucharme, envíamela!
 - intent: negacion
   examples: |
     - Creo que aún no, cambiaré de tema.
+    - Uy en este momento no podré escucharla
+    - Uy en este momento no podré escucharla, retomamos luego.
 - intent: rsp_tema
   examples: |
     - Romper creencias
@@ -48,6 +51,8 @@ nlu:
     - Me llamo [Harold](Nombre)
     - Me llamo [Rosa](Nombre)
     - Me llamo [Juan](Nombre)
+    - [Juan](Nombre)
+    - Me llamo [Pepe](Nombre)
 - intent: inf-email
   examples: |
     - Mi email es harolrop@gmail.com
@@ -57,9 +62,13 @@ nlu:
   examples: |
     - Heterosexual
     - Bisexual
+    - Lesbiana
 - intent: edad
   examples: |
     - 20
+    - 18
+    - 19
+    - 18+
 - intent: quien_mejora_orgasm
   examples: |
     - Conmigo misma
@@ -70,3 +79,41 @@ nlu:
 - intent: que_me_pasa
   examples: |
     - Estoy ...
+    - Me siento ...
+    - Me siento ..
+- intent: objetivos
+  examples: |
+    - Primero ...
+    - Primero
+- intent: hecho_mejorar
+  examples: |
+    - Hasta ahora
+- intent: no_escuchar
+  examples: |
+    - Así lo haré cuando lo escuche
+- intent: escuchar
+  examples: |
+    - Mejor lo escucho ahora
+- intent: si_ayuda
+  examples: |
+    - Increíble! He conectado conmigo.
+- intent: no_ayuda
+  examples: |
+    - No me ha servido mucho
+- intent: emocion
+  examples: |
+    - Ira
+    - Amor
+    - Miedo
+    - Sorpresa
+    - Tristeza
+    - Placer
+- intent: parte_del_cuerpo
+  examples: |
+    - Cabeza
+    - Pecho
+- intent: gracias
+  examples: |
+    - gracias
+    - Gracias por recordármelo.
+    - Gracias por el dato, no lo sabía.

@@ -284,3 +284,63 @@ stories:
   - action: utter_no_juzgar_partes_2
   - intent: gracias
   - action: utter_post_gracias_preg
+- story: continuacion post gracias
+  steps:
+  - action: utter_post_gracias_preg
+  - intent: ha_pasado
+  - action: utter_emocion_rsp
+  - intent: intentar
+  - action: utter_prog_personaliza_1
+  - action: utter_prog_personaliza_2
+  - intent: listo
+  - action: utter_test_9preg
+  - intent: afirmacion
+  - action: utter_frec_orgasm
+  - intent: frecuencia
+  - action: utter_nivel_satisf
+  - intent: frecuencia
+  - action: utter_mente_fantasias
+  - intent: sentimiento
+- story: ppp 1
+  steps:
+  - intent: saludo
+  - action: utter_inicio
+  - action: utter_saludo
+  - intent: resp_saludo_1
+  - action: utter_post_saludo_1.1
+  - action: utter_post_saludo_1.2
+  - action: utter_post_saludo_1.3
+  - action: utter_listo
+  - intent: afirmacion
+  - action: utter_orgasmo_1
+  - action: utter_orgasmo_2
+  - action: utter_orgasmo_3
+  - intent: afirmacion
+  - action: utter_sobrenombre
+  - intent: sobrenombre
+    entities:
+    - Nombre: Harold
+  - slot_was_set:
+    - Nombre: Harold
+  - action: nombre_form
+  - active_loop: nombre_form
+  - slot_was_set:
+    - Nombre: Harold
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_gustoconocerte
+  - action: utter_sexualidad
+  - intent: sexualidad
+  - action: utter_edad
+  - intent: edad
+  - action: utter_estado_civil
+  - intent: estado_civil
+  - action: utter_mejorarorgasmos
+  - intent: quien_mejora_orgasm
+  - action: utter_quepasa
+  - intent: que_me_pasa
+  - slot_was_set:
+    - Nombre: Harold
+  - action: utter_post_que_pasa_1
+  - action: utter_post_que_pasa_2

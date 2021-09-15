@@ -30,6 +30,8 @@ nlu:
     - Sí! Vamos con todo
     - Perfecto Miah! Puedes conocerme.
     - Gracias Miah por escucharme, envíamela!
+    - Empecemos!
+    - Perfecto, así me conoceré mejor
 - intent: negacion
   examples: |
     - Creo que aún no, cambiaré de tema.
@@ -117,3 +119,28 @@ nlu:
     - gracias
     - Gracias por recordármelo.
     - Gracias por el dato, no lo sabía.
+- intent: ha_pasado
+  examples: |
+    - Sí me ha sucedido
+    - No, nunca lo he pasado
+- intent: listo
+  examples: |
+    - Estoy lista Miah
+    - Ya llegué aquí y no voy a dar marcha atrás.
+- intent: frecuencia
+  examples: |
+    - Casi a diario
+    - Al menos una vez por semana
+    - Un par de veces al mes.
+    - No he tenido uno en años
+    - Creo que nunca he tenido uno
+    - Siempre
+    - Casi siempre
+    - Regularmente
+    - Nunca
+- intent: sentimiento
+  examples: |
+    - Me siento culpable
+    - Que estoy haciendo algo indebido
+    - A veces me dejo fluir
+    - Lo disfruto, me encanta hacerlo

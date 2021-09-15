@@ -53,6 +53,14 @@ intents:
     use_entities: true
 - gracias:
     use_entities: true
+- listo:
+    use_entities: true
+- frecuencia:
+    use_entities: true
+- sentimiento:
+    use_entities: true
+- ha_pasado:
+    use_entities: true
 entities:
 - Nombre
 slots:
@@ -228,7 +236,70 @@ responses:
       title: Gracias por recordármelo.
     text: Cuando una persona tiene emociones reprimidas, nuestro cuerpo las externaliza, e incluso hasta puede enfermarse, ese proceso se llama SOMATIZACIÓN
   utter_post_gracias_preg:
-  - text: ¿Te ha pasado que alguna vez has tenido opresión en el pecho, falta de respiración, dolor en los brazos o piernas o incluso dolor de cabeza pero vas al doctor y no tienes nada?
+  - buttons:
+    - payload: Sí me ha sucedido
+      title: Sí me ha sucedido
+    - payload: No, nunca lo he pasado
+      title: No, nunca lo he pasado
+    text: ¿Te ha pasado que alguna vez has tenido opresión en el pecho, falta de respiración, dolor en los brazos o piernas o incluso dolor de cabeza pero vas al doctor y no tienes nada?
+  utter_emocion_rsp:
+  - buttons:
+    - payload: Así lo haré
+      title: Así lo haré
+    - payload: Me resulta muy difícil, pero lo intentaré
+      title: Me resulta muy difícil, pero lo intentaré
+    text: '{Nombre} así que por eso, la siguiente vez que sientas dolor en alguna parte de tu cuerpo y vas al doctor y te dice que no tienes nada, piensa que emoción estas reprimiendo, y hazlo consiente, y trabaja con todo lo que vas a aprender en ello, y confía en mientras más sueltes tu carga, todo fluirá mejor en ti.'
+  utter_prog_personaliza_1:
+  - text: '{Nombre} con todo lo que me has contado quiero que trabajemos juntas para diseñar un programa personalizado para ti'
+  utter_prog_personaliza_2:
+  - buttons:
+    - payload: Estoy lista Miah
+      title: Estoy lista Miah
+    - payload: Ya llegué aquí y no voy a dar marcha atrás
+      title: Ya llegué aquí y no voy a dar marcha atrás
+    text: ¿Qué te parece la idea?
+  utter_test_9preg:
+  - buttons:
+    - payload: Empecemos!
+      title: Empecemos!
+    - payload: Perfecto, así me conoceré mejor
+      title: Perfecto, así me conoceré mejor
+    text: Perfecto! Vamos a hacer un test de 9 preguntas que te ayudará a saber el nivel de aprendizaje y en las áreas que más debemos trabajar para lograr mejorar tus orgasmos contigo misma.
+  utter_frec_orgasm:
+  - buttons:
+    - payload: Casia a diario
+      title: 1. Casi a diario
+    - payload: Al menos una vez por semana
+      title: 2. Al menos una vez por semana
+    - payload: Un par de veces al mes
+      title: 3. Un par de veces al mes.
+    - payload: No he tenido uno en años
+      title: 4.  No he tenido uno en años
+    - payload: Creo que nunca he tenido uno
+      title: 5. Creo que nunca he tenido uno
+    text: Sé honesta {Nombre} ¿Con qué frecuencia tienes un orgasmo?
+  utter_nivel_satisf:
+  - buttons:
+    - payload: Siempre
+      title: 🔥 Siempre
+    - payload: Casi siempre
+      title: 😎 Casi siempre
+    - payload: Regularmente
+      title: 😬 Regularmente
+    - payload: Nunca
+      title: 🥶 Nunca
+    text: Señala por emoticón el nivel de satisfacción con tu vida sexual
+  utter_mente_fantasias:
+  - buttons:
+    - payload: Me siento culpable
+      title: Me siento culpable
+    - payload: Que estoy haciendo algo indebido
+      title: Que estoy haciendo algo indebido
+    - payload: A veces me dejo fluir
+      title: A veces me dejo fluir
+    - payload: Lo disfruto, me encanta hacerloLo disfruto, me encanta hacerlo
+      title: Lo disfruto
+    text: Cuando tu mente piensa sobre tus deseos ocultos, fantasías o incluso travesuras ¿Tu te sientes?
 actions:
 - utter_quepasa
 forms:

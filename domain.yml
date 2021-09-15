@@ -61,6 +61,12 @@ intents:
     use_entities: true
 - ha_pasado:
     use_entities: true
+- intentar:
+    use_entities: true
+- rsp_tema_romper_creencias:
+    use_entities: true
+- seguir_proceso:
+    use_entities: true
 entities:
 - Nombre
 slots:
@@ -97,7 +103,7 @@ responses:
     - payload: Creo que aún no, cambiaré de tema.
       title: Creo que aún no, cambiaré de tema.
     text: ¿Estás lista para comenzar?
-  utter_acerca_bot:
+  utter_acerca_bot_1:
   - text: Te mando un audio contándote todo sobre mí.                    AUDIO …
   utter_no_lista_1:
   - text: Entiendo, si no te sientes lista para este tema en otro momento podemos volver a ello.
@@ -184,7 +190,7 @@ responses:
       title: Uy en este momento no podré escucharla
     text: Te estoy mandando un audio con un ejercicio que quiero que empieces desde hoy.
   utter_audio_n2:
-  - text: /audio/
+  - text: /audio-2/
   utter_audio_n2r:
   - buttons:
     - payload: Increíble! He conectado conmigo.
@@ -196,8 +202,8 @@ responses:
   - text: No te preocupes, igual te lo mando para que lo escuches cuando puedas.
   utter_ntp_audio2_2:
   - buttons:
-    - payload: Así lo haré cuando lo escuche
-      title: Así lo haré cuando lo escuche
+    - payload: Ahora no, lo escucharé luego
+      title: Ahora no, lo escucharé luego
     - payload: Mejor lo escucho ahora
       title: Mejor lo escucho ahora
     text: '{Nombre} recuerda hacerlo cada vez que lo necesites, si puedes diariamente mejor.'
@@ -297,9 +303,22 @@ responses:
       title: Que estoy haciendo algo indebido
     - payload: A veces me dejo fluir
       title: A veces me dejo fluir
-    - payload: Lo disfruto, me encanta hacerloLo disfruto, me encanta hacerlo
+    - payload: Lo disfruto, me encanta hacerlo
       title: Lo disfruto
     text: Cuando tu mente piensa sobre tus deseos ocultos, fantasías o incluso travesuras ¿Tu te sientes?
+  utter_adios:
+  - text: ¡Hasta la próxima! Cuídate
+  utter_acerca_bot_2:
+  - buttons:
+    - payload: 'Qué linda historia, ahora estoy más motivada. Empecemos! '
+      title: Qué linda historia, ahora estoy más motivada.
+    - payload: Quiero empezar mi proceso Miah. Sigamos!
+      title: Quiero empezar mi proceso Miah.
+    text: /audio-bot/
+  utter_post_bot_1:
+  - text: Empezamos! En este espacio no serás juzgada, todo lo que conversemos será confidencial.
+  utter_post_bot_2:
+  - text: Puedes hablarme libremente, desahógate, fluye y descúbrete.
 actions:
 - utter_quepasa
 forms:

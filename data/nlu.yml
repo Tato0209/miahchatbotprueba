@@ -37,9 +37,11 @@ nlu:
     - Creo que aún no, cambiaré de tema.
     - Uy en este momento no podré escucharla
     - Uy en este momento no podré escucharla, retomamos luego.
-- intent: rsp_tema
+- intent: rsp_tema_romper_creencias
   examples: |
     - Romper creencias
+- intent: rsp_tema
+  examples: |
     - Dejar de juzgar mi cuerpo
     - Mejorar mi confianza
     - Mejorar la comunicación con mi pareja
@@ -55,6 +57,9 @@ nlu:
     - Me llamo [Juan](Nombre)
     - [Juan](Nombre)
     - Me llamo [Pepe](Nombre)
+    - [Maria](Nombre)
+    - [Haroldd](Nombre)
+    - Me llamo [Mara](Nombre)
 - intent: inf-email
   examples: |
     - Mi email es harolrop@gmail.com
@@ -71,6 +76,9 @@ nlu:
     - 18
     - 19
     - 18+
+    - 23
+    - 21
+    - 40
 - intent: quien_mejora_orgasm
   examples: |
     - Conmigo misma
@@ -78,11 +86,13 @@ nlu:
 - intent: estado_civil
   examples: |
     - Saliente
+    - Solterx
 - intent: que_me_pasa
   examples: |
     - Estoy ...
     - Me siento ...
     - Me siento ..
+    - Estoy preocupada
 - intent: objetivos
   examples: |
     - Primero ...
@@ -92,7 +102,7 @@ nlu:
     - Hasta ahora
 - intent: no_escuchar
   examples: |
-    - Así lo haré cuando lo escuche
+    - Ahora no, lo escucharé luego
 - intent: escuchar
   examples: |
     - Mejor lo escucho ahora
@@ -114,6 +124,7 @@ nlu:
   examples: |
     - Cabeza
     - Pecho
+    - En la cabeza
 - intent: gracias
   examples: |
     - gracias
@@ -123,6 +134,7 @@ nlu:
   examples: |
     - Sí me ha sucedido
     - No, nunca lo he pasado
+    - Si, me ha sucedido
 - intent: listo
   examples: |
     - Estoy lista Miah
@@ -144,3 +156,10 @@ nlu:
     - Que estoy haciendo algo indebido
     - A veces me dejo fluir
     - Lo disfruto, me encanta hacerlo
+- intent: seguir_proceso
+  examples: |
+    - Quiero empezar mi proceso Miah. Sigamos!
+    - Qué linda historia, ahora estoy más motivada. Empecemos!
+- intent: intentar
+  examples: |
+    - Así lo haré

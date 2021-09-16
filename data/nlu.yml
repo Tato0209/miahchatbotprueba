@@ -139,6 +139,7 @@ nlu:
   examples: |
     - Estoy lista Miah
     - Ya llegué aquí y no voy a dar marcha atrás.
+    - Ya llegué aquí y no voy a dar marcha atrás
 - intent: frecuencia
   examples: |
     - Casi a diario

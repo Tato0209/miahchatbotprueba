@@ -32,6 +32,7 @@ nlu:
     - Gracias Miah por escucharme, envíamela!
     - Empecemos!
     - Perfecto, así me conoceré mejor
+    - ok
 - intent: negacion
   examples: |
     - Creo que aún no, cambiaré de tema.
@@ -93,6 +94,7 @@ nlu:
     - Me siento ...
     - Me siento ..
     - Estoy preocupada
+    - Estoy ..
 - intent: objetivos
   examples: |
     - Primero ...
@@ -125,6 +127,7 @@ nlu:
     - Cabeza
     - Pecho
     - En la cabeza
+    - En mi cabeza
 - intent: gracias
   examples: |
     - gracias
@@ -151,6 +154,10 @@ nlu:
     - Casi siempre
     - Regularmente
     - Nunca
+    - Todos los días
+    - 1 - 2 veces por semana
+    - 1 mes al mes
+    - 1 vez por semana
 - intent: sentimiento
   examples: |
     - Me siento culpable
@@ -164,3 +171,30 @@ nlu:
 - intent: intentar
   examples: |
     - Así lo haré
+- intent: encuentrosex
+  examples: |
+    - Apago la luz, no me gusta que me vean
+    - Estoy permitiendo que me vean y me gusta la luz encendida
+    - Me encanto, amo mi cuerpo como es y punto
+- intent: orgasmo
+  examples: |
+    - Nunca he tenido un orgasmo
+    - Puedo llegar mejor una pareja
+    - Tengo orgasmos siempre
+- intent: conexionvisual
+  examples: |
+    - Siempre debo mirar a los ojos
+    - Siento que es un buen inicio
+    - Me cuesta mucho mirar a alguien
+    - No me gusta que me miren
+- intent: conectarconsigo
+  examples: |
+    - Un buen ambiente
+    - Estar tranquila
+    - Hacer un ejercicio de respiración antes
+    - No tengo ni idea
+- intent: importanciaorgasmo
+  examples: |
+    - El orgasmo lo es todo para mí
+    - Es importante pero sino lo tengo igual lo disfruto
+    - Pensaba eso pero ya cambié de opinión, lo más importante es mi placer

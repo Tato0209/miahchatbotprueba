@@ -319,6 +319,87 @@ responses:
   - text: Empezamos! En este espacio no serás juzgada, todo lo que conversemos será confidencial.
   utter_post_bot_2:
   - text: Puedes hablarme libremente, desahógate, fluye y descúbrete.
+  utter_encuentro_sexual:
+  - buttons:
+    - payload: Apago la luz, no me gusta que me vean
+      title: Apago la luz, no me gusta que me vean
+    - payload: Trato de sacarme la ropa rápido y empezar
+      title: Trato de sacarme la ropa rápido y empezar
+    - payload: Me gusta la luz encendida
+      title: Me gusta la luz encendida
+    - payload: Me encanto, amo mi cuerpo como es y punto.
+      title: Me encanto, amo mi cuerpo como es y punto.
+    text: En relación a tu cuerpo ¿Cómo te sientes tú en tu encuentro sexual?
+  utter_tener_orgasmo:
+  - buttons:
+    - payload: Nunca he tenido un orgasmo
+      title: Nunca he tenido un orgasmo
+    - payload: Lo logro más cuando lo intento sola
+      title: Lo logro más cuando lo intento sola
+    - payload: Puedo llegar mejor con una pareja
+      title: Puedo llegar mejor con una pareja
+    - payload: Tengo orgasmos siempre
+      title: Tengo orgasmos siempre
+    text: ¿Qué tan fácil es para ti tener un Orgasmo?
+  utter_masturbas:
+  - buttons:
+    - payload: Todos los días
+      title: Todos los días
+    - payload: 1 - 2 veces por semana
+      title: 1 - 2 veces por semana
+    - payload: 1 vez por semana
+      title: 1 vez por semana
+    - payload: 1 mes al mes
+      title: 1 mes al mes
+    - payload: Nunca
+      title: Nunca
+    text: ¿Cada cuánto te masturbas?
+  utter_razon_placer:
+  - buttons:
+    - payload: El orgasmo lo es todo para mí
+      title: El orgasmo lo es todo para mí
+    - payload: Es importante pero sino lo tengo igual lo disfruto
+      title: Es importante pero sino lo tengo igual lo disfruto
+    - payload: Pensaba eso pero ya cambié de opinión, lo más importante es mi placer
+      title: Pensaba eso pero ya cambié de opinión, lo más importante es mi placer
+    text: ¿Consideras que el orgasmo es la razón para tener placer?
+  utter_llegar_orgasmo:
+  - buttons:
+    - payload: Conmigo misma
+      title: Conmigo misma
+    - payload: Con una pareja ocasional
+      title: Con una pareja ocasional
+    - payload: Con una juguete sexual
+      title: Con una juguete sexual
+    - payload: Mirando pornografía
+      title: Mirando pornografía
+    - payload: Con mi pareja estable
+      title: Con mi pareja estable
+    text: ¿Cómo te es más fácil llegar a un orgasmo?
+  utter_conectarse_consigo:
+  - buttons:
+    - payload: Un buen ambiente
+      title: Un buen ambiente
+    - payload: Estar tranquila
+      title: Estar tranquila
+    - payload: Hacer un ejercicio de respiración antes
+      title: Hacer un ejercicio de respiración antes
+    - payload: No tengo ni idea
+      title: No tengo ni idea
+    text: ¿Qué es lo más importante para conectarte contigo misma?
+  utter_conexion_visual:
+  - buttons:
+    - payload: Siempre debo mirar a los ojos
+      title: Siempre debo mirar a los ojos
+    - payload: Siento que es un buen inicio
+      title: Siento que es un buen inicio
+    - payload: Me cuesta mucho mirar a alguien
+      title: Me cuesta mucho mirar a alguien
+    - payload: No me gusta que me miren
+      title: No me gusta que me miren
+    text: ¿Sientes que la conexión visual es algo importante para conectar con tu pareja?
+  utter_resultados:
+  - text: '{Nombre} tus resultados son estos:'
 actions:
 - utter_quepasa
 forms:

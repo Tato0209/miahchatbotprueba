@@ -94,6 +94,21 @@ stories:
   - intent: frecuencia
   - action: utter_mente_fantasias
   - intent: sentimiento
+  - action: utter_encuentro_sexual
+  - intent: encuentrosex
+  - action: utter_tener_orgasmo
+  - intent: orgasmo
+  - action: utter_masturbas
+  - intent: frecuencia
+  - action: utter_razon_placer
+  - intent: importanciaorgasmo
+  - action: utter_llegar_orgasmo
+  - intent: quien_mejora_orgasm
+  - action: utter_conectarse_consigo
+  - intent: conectarconsigo
+  - action: utter_conexion_visual
+  - intent: conexionvisual
+  - action: utter_resultados
 - story: (3) Primer cuestionario
   steps:
   - action: utter_sobrenombre
